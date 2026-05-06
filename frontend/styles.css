@@ -1033,42 +1033,59 @@ h3 {
 }
 
 .case-link {
-  min-height: 36px;
+  min-height: 32px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  border: 1px solid rgba(159, 192, 255, 0.16);
+  gap: 5px;
+  border: 1px solid rgba(139, 162, 255, 0.18);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.032);
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 720;
+  background:
+    linear-gradient(135deg, rgba(105, 117, 255, 0.09), rgba(155, 108, 255, 0.045)),
+    rgba(5, 11, 24, 0.54);
+  color: #b8c6e6;
+  font-size: 11px;
+  font-weight: 660;
   line-height: 1.2;
   text-align: center;
-  padding: 8px 10px;
+  padding: 7px 9px;
   cursor: pointer;
   font: inherit;
   transition: transform 170ms ease, border-color 170ms ease, background 170ms ease, color 170ms ease, box-shadow 170ms ease;
 }
 
+.case-link span[aria-hidden="true"] {
+  font-size: 10px;
+  line-height: 1;
+  opacity: 0.78;
+  transform: translateY(-0.5px);
+}
+
 .case-link:hover {
   transform: translateY(-1px);
-  border-color: rgba(129, 213, 255, 0.34);
-  background: rgba(129, 213, 255, 0.06);
-  color: var(--text);
+  border-color: rgba(155, 108, 255, 0.30);
+  background:
+    linear-gradient(135deg, rgba(105, 117, 255, 0.12), rgba(155, 108, 255, 0.065)),
+    rgba(7, 14, 30, 0.64);
+  color: #d9e3ff;
+  box-shadow: 0 8px 22px rgba(91, 140, 255, 0.08);
 }
 
 .case-link.primary-link {
-  border-color: rgba(32, 226, 138, 0.24);
-  background: linear-gradient(135deg, rgba(32, 226, 138, 0.12), rgba(106, 215, 255, 0.055));
-  color: #dfffee;
-  box-shadow: 0 0 24px rgba(32, 226, 138, 0.08);
+  border-color: rgba(32, 226, 168, 0.22);
+  background:
+    linear-gradient(135deg, rgba(32, 226, 168, 0.105), rgba(106, 215, 255, 0.055)),
+    rgba(4, 17, 24, 0.58);
+  color: #d8fff1;
+  box-shadow: 0 0 18px rgba(32, 226, 168, 0.055);
 }
 
 .case-link.primary-link:hover {
-  border-color: rgba(32, 226, 138, 0.38);
-  box-shadow: 0 0 28px rgba(32, 226, 138, 0.13);
+  border-color: rgba(32, 226, 168, 0.34);
+  background:
+    linear-gradient(135deg, rgba(32, 226, 168, 0.14), rgba(106, 215, 255, 0.075)),
+    rgba(5, 19, 27, 0.68);
+  box-shadow: 0 8px 24px rgba(32, 226, 168, 0.09);
 }
 
 .process-panel {
