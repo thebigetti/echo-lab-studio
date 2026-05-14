@@ -13,6 +13,14 @@ function getApiUrl() {
     return "http://localhost:3000/api/request";
   }
 
+  const isLocalStaticServer = ["localhost", "127.0.0.1"].includes(window.location.hostname)
+    && window.location.port
+    && window.location.port !== "3000";
+
+  if (isLocalStaticServer) {
+    return "http://localhost:3000/api/request";
+  }
+
   return "/api/request";
 }
 
