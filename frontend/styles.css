@@ -2084,15 +2084,19 @@ textarea:focus {
   }
 
   .section {
-    padding: 56px 0;
+    padding: 38px 0;
+  }
+
+  .section-head {
+    margin-bottom: 16px;
   }
 
   .hero {
-    padding: 46px 0 52px;
+    padding: 36px 0 40px;
   }
 
   .hero-inner {
-    gap: 34px;
+    gap: 24px;
   }
 
   .hero-title {
@@ -2179,6 +2183,11 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 
+  .card-grid,
+  .works-grid {
+    gap: 12px;
+  }
+
   .toolkit-panel {
     gap: 14px;
     padding: 20px;
@@ -2194,15 +2203,15 @@ textarea:focus {
   }
 
   .process-panel {
-    gap: 24px;
-    padding: 22px;
+    gap: 16px;
+    padding: 18px;
   }
 
   .service-card,
   .work-card,
   .about-block,
   .contact-layout {
-    padding: 20px;
+    padding: 16px;
   }
 
   .case-actions {
