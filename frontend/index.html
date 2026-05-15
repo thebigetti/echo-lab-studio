@@ -70,7 +70,7 @@
             <span>Brand Video</span><span>Reels</span><span>Food Cards</span><span>Promo</span><span>AI Video</span><span>Montage</span>
           </div>
           <div class="case-actions">
-            <a class="case-link primary-link" href="#contacts">Смотреть <span aria-hidden="true">↗</span></a>
+            <button class="case-link primary-link panel-trigger" type="button" data-panel="foodVideos">Смотреть <span aria-hidden="true">↗</span></button>
             <a class="case-link" href="#contacts">Обсудить</a>
           </div>
         </article>
@@ -272,6 +272,26 @@
           </div>
           <a class="case-link primary-link" href="#contacts">Обсудить лендинг <span aria-hidden="true">↗</span></a>
         </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-panel-modal" data-panel-modal="foodVideos" aria-hidden="true">
+    <div class="video-modal-backdrop" data-panel-close></div>
+    <div class="case-panel-dialog" role="dialog" aria-modal="true" aria-labelledby="foodVideosTitle">
+      <button class="video-modal-close" type="button" data-panel-close aria-label="Закрыть food-видео">×</button>
+      <h3 id="foodVideosTitle">Brand Reels / Food Cards</h3>
+      <div class="case-panel-grid">
+        <button class="video-preview video-trigger" type="button" data-video-src="video/burger.mp4" data-video-title="Burger">
+          <img class="video-preview-thumb" src="img/burger.png" alt="Burger" loading="lazy">
+          <strong>Burger</strong>
+          <span>Food card: аппетитный AI-визуал и motion-подача продукта.</span>
+        </button>
+        <button class="video-preview video-trigger" type="button" data-video-src="video/shawarma.mp4" data-video-title="Shawarma">
+          <img class="video-preview-thumb" src="img/shawarma.png" alt="Shawarma" loading="lazy">
+          <strong>Shawarma</strong>
+          <span>Food card: визуал, динамика кадра и промо-подача блюда.</span>
+        </button>
       </div>
     </div>
   </div>
