@@ -2156,7 +2156,7 @@ textarea:focus {
   }
 
   .hero {
-    padding: 36px 0 40px;
+    padding: 30px 0 36px;
   }
 
   .hero-inner {
@@ -2165,26 +2165,43 @@ textarea:focus {
 
   .nav {
     align-items: center;
+    gap: 9px;
+    padding: 10px 12px 11px;
     text-align: center;
   }
 
   .logo {
-    width: 100%;
+    width: auto;
     justify-content: center;
   }
 
   .logo-mark {
-    width: 48px;
-    max-height: 48px;
+    width: 34px;
+    max-height: 34px;
   }
 
   .logo span {
-    font-size: 19px;
+    font-size: 16px;
   }
 
   .nav-links {
+    width: 100%;
     justify-content: center;
-    gap: 14px 18px;
+    flex-wrap: nowrap;
+    gap: 14px;
+    overflow-x: auto;
+    padding: 1px 2px 3px;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    flex: 0 0 auto;
+    font-size: 12px;
+    line-height: 1.2;
   }
 
   .hero-content {
