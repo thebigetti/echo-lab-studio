@@ -1972,6 +1972,43 @@ textarea:focus {
   margin: 0;
 }
 
+.back-to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 80;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(32, 226, 168, 0.28);
+  border-radius: 50%;
+  background:
+    linear-gradient(135deg, rgba(32, 226, 168, 0.18), rgba(106, 215, 255, 0.10)),
+    rgba(5, 17, 27, 0.78);
+  color: #d8fff1;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.34), 0 0 22px rgba(32, 226, 168, 0.10);
+  backdrop-filter: blur(16px) saturate(135%);
+  text-decoration: none;
+  transition: transform 170ms ease, border-color 170ms ease, box-shadow 170ms ease, background 170ms ease;
+}
+
+.back-to-top span {
+  font-size: 24px;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+  border-color: rgba(32, 226, 168, 0.44);
+  background:
+    linear-gradient(135deg, rgba(32, 226, 168, 0.24), rgba(106, 215, 255, 0.14)),
+    rgba(5, 19, 29, 0.88);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.38), 0 0 28px rgba(32, 226, 168, 0.16);
+}
+
 @media (max-width: 1040px) {
   .services-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2239,6 +2276,17 @@ textarea:focus {
 
   .case-panel-dialog {
     padding: 18px;
+  }
+
+  .back-to-top {
+    right: 14px;
+    bottom: 14px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .back-to-top span {
+    font-size: 21px;
   }
 }
 
