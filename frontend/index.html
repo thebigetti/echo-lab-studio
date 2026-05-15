@@ -9,7 +9,10 @@
 <body>
   <header class="site-header">
     <nav class="nav container" aria-label="Основная навигация">
-      <a class="logo" href="#top">Echo Lab Studio</a>
+      <a class="logo" href="#top" aria-label="Echo Lab Studio">
+        <img class="logo-mark" src="img/logo-symbol.png" alt="Echo Lab Studio">
+        <span>Echo Lab Studio</span>
+      </a>
       <div class="nav-links">
         <a href="#services">Услуги</a>
         <a href="#process">Процесс</a>
@@ -27,7 +30,7 @@
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-content">
-          <p class="eyebrow">Системное администрирование · VPN · AI-визуал · монтаж · лендинги</p>
+          <p class="eyebrow hero-eyebrow">Системное администрирование · VPN · AI-визуал · монтаж<br>лендинги · боты · видео по сценарию</p>
           <h1 class="hero-title"><span class="metal-word">Echo Lab Studio</span></h1>
           <p class="hero-subtitle">Помогаю с техникой, сайтами и визуалом без лишней сложности</p>
           <p class="hero-text">Настрою интернет, роутер, VPN, Windows и рабочие программы, чтобы всё стабильно работало дома или в офисе. Сделаю простой сайт или лендинг с заявками, подготовлю фото, AI-видео, монтаж и визуальное оформление для проекта, услуги или соцсетей.</p>
@@ -77,7 +80,7 @@
         <article class="card service-card case-card">
           <div class="case-number">03</div>
           <h3>Сценарий и AI-визуал</h3>
-          <p>Работа по сценарию для документальных программ: создание AI-визуала, реконструкций, атмосферных сцен и иллюстративных кадров под структуру выпуска.</p>
+          <p>Работа по сценарию для программ телеканала «Культура»: AI-визуал, реконструкции, атмосферные сцены и иллюстративные кадры для «Забытого ремесла» и «Жизни замечательных идей».</p>
           <div class="tags">
             <span>Documentary</span><span>Script</span><span>AI Visual</span><span>Reconstruction</span><span>Scenes</span><span>Montage</span>
           </div>
@@ -209,11 +212,11 @@
     </section>
 
     <section class="section container" id="about">
+      <div class="section-head">
+        <p class="eyebrow">Обо мне</p>
+        <h2>Технический подход плюс визуальная практика</h2>
+      </div>
       <div class="about-block card">
-        <div class="section-head">
-          <p class="eyebrow">Обо мне</p>
-          <h2>Технический подход плюс визуальная практика</h2>
-        </div>
         <p>Я системный администратор с сильным уклоном в production и AI pipeline. Работаю с Windows-инфраструктурой, сетями, роутерами, VPN, серверной логикой, сайтами и Telegram-интеграциями. Параллельно собираю визуальные проекты: генерирую фрагменты видео по сценарию, работаю в AI-инструментах, реставрирую фото, делаю брендовые ролики, монтаж, визуальную подачу и production pipeline от идеи до финальной сборки.</p>
       </div>
     </section>
@@ -323,17 +326,17 @@
     <div class="case-panel-dialog documentary-panel-dialog" role="dialog" aria-modal="true" aria-labelledby="documentaryVisualsTitle" aria-describedby="documentaryVisualsText">
       <button class="video-modal-close" type="button" data-panel-close aria-label="Закрыть список проектов">×</button>
       <h3 id="documentaryVisualsTitle">Сценарий и AI-визуал</h3>
-      <p class="case-panel-lead" id="documentaryVisualsText">Документальные и культурные проекты, где использовались AI-визуал, реконструкция сцен, иллюстративные кадры и визуальная поддержка сценария.</p>
+      <p class="case-panel-lead" id="documentaryVisualsText">Документальные и культурные проекты для телеканала «Культура», включая программы «Забытое ремесло» и «Жизнь замечательных идей»: AI-визуал, реконструкция сцен, иллюстративные кадры и визуальная поддержка сценария.</p>
       <div class="case-panel-grid documentary-panel-grid">
         <article class="case-panel-item documentary-project-card">
-          <img class="case-panel-image" src="img/liniyaperemeni.png" alt="Линия перемен" loading="lazy">
-          <strong>Линия перемен</strong>
+          <img class="case-panel-image" src="img/liniyaperemeni.png" alt="Линия перемены даты" loading="lazy">
+          <strong>Линия перемены даты</strong>
           <p>AI-визуал и иллюстративные кадры для документального выпуска.</p>
           <a class="case-link primary-link" href="https://smotrim.ru/search?query=%D0%B7%D0%B0%D0%B1%D1%8B%D1%82%D0%BE%D0%B5+%D1%80%D0%B5%D0%BC%D0%B5%D1%81%D0%BB%D0%BE#playing_video=3058580" target="_blank" rel="noopener noreferrer">Смотреть выпуск <span aria-hidden="true">↗</span></a>
         </article>
         <article class="case-panel-item documentary-project-card">
-          <img class="case-panel-image" src="img/pogoda.png" alt="Погода" loading="lazy">
-          <strong>Погода</strong>
+          <img class="case-panel-image" src="img/pogoda.png" alt="Как предсказать погоду" loading="lazy">
+          <strong>Как предсказать погоду</strong>
           <p>Атмосферные AI-сцены и визуальная поддержка материала.</p>
           <a class="case-link primary-link" href="https://smotrim.ru/brand/63910#playing_video=3038741" target="_blank" rel="noopener noreferrer">Смотреть выпуск <span aria-hidden="true">↗</span></a>
         </article>

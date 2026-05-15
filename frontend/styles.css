@@ -125,14 +125,29 @@ svg {
 
 .logo {
   flex: 0 0 auto;
-  font-size: 17px;
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  width: auto;
+  text-decoration: none;
+}
+
+.logo-mark {
+  width: 44px;
+  height: auto;
+  max-height: 44px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(32, 191, 255, 0.14));
+}
+
+.logo span {
+  color: #7edfff;
+  font-size: 18px;
   font-weight: 800;
-  letter-spacing: 0;
+  line-height: 1;
   white-space: nowrap;
-  background: linear-gradient(110deg, #ffffff, #9ec1ff 48%, #d8ccff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  text-shadow: 0 0 16px rgba(32, 191, 255, 0.18);
 }
 
 .nav-links {
@@ -160,9 +175,9 @@ svg {
 .hero {
   position: relative;
   isolation: isolate;
-  min-height: min(760px, calc(100vh - 68px));
+  min-height: min(660px, calc(100vh - 68px));
   overflow: hidden;
-  padding: 54px 0 56px;
+  padding: 46px 0 44px;
 }
 
 .hero > * {
@@ -266,6 +281,10 @@ svg {
   letter-spacing: 0.035em;
   line-height: 1.45;
   text-transform: uppercase;
+}
+
+.hero-eyebrow {
+  max-width: 720px;
 }
 
 h1,
@@ -1876,10 +1895,6 @@ body.modal-open {
   padding: 30px;
 }
 
-.about-block .section-head {
-  margin-bottom: 20px;
-}
-
 .about-block p {
   max-width: 880px;
   margin: 0;
@@ -2155,6 +2170,16 @@ textarea:focus {
 
   .logo {
     width: 100%;
+    justify-content: center;
+  }
+
+  .logo-mark {
+    width: 48px;
+    max-height: 48px;
+  }
+
+  .logo span {
+    font-size: 19px;
   }
 
   .nav-links {
