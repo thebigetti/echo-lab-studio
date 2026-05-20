@@ -913,7 +913,7 @@ h3 {
   }
 }
 
-.sticker-vpn {
+.sticker-access {
   left: 34px;
   top: 58px;
   z-index: 4;
@@ -2275,7 +2275,7 @@ textarea:focus {
     font-size: 13px;
   }
 
-  .sticker-vpn,
+  .sticker-access,
   .sticker-telegram,
   .sticker-router,
   .sticker-windows,

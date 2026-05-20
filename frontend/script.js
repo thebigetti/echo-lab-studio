@@ -331,7 +331,7 @@ initHeroMatrix();
 
 if (hero && matrixCanvas && !document.querySelector(".hero-matrix")) {
   const ctx = matrixCanvas.getContext("2d");
-  const symbols = ["0101", "VPN", "AI", "NET", "SYS", "RENDER", "ROUTE", "1010", "IO"];
+  const symbols = ["0101", "LINK", "AI", "NET", "SYS", "RENDER", "ROUTE", "1010", "IO"];
   let columns = [];
   let fontSize = 14;
   let frame = 0;
@@ -408,8 +408,8 @@ if (hero && matrixCanvas && !document.querySelector(".hero-matrix")) {
 
 if (pageMatrixCanvas) {
   const pageCtx = pageMatrixCanvas.getContext("2d");
-  const pageSymbols = ["0", "1", "SYS", "VPN", "AI", "ROUTE", "RENDER", "NET", "ACCESS", "MEDIA"];
-  const brickLabels = ["0101", "VPN", "SYS", "ROUTE", "AI", "RENDER", "NET", "MEDIA"];
+  const pageSymbols = ["0", "1", "SYS", "LINK", "AI", "ROUTE", "RENDER", "NET", "ACCESS", "MEDIA"];
+  const brickLabels = ["0101", "LINK", "SYS", "ROUTE", "AI", "RENDER", "NET", "MEDIA"];
   let pageColumns = [];
   let digitalBricks = [];
   let pageFrame = 0;
